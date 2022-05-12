@@ -1,0 +1,841 @@
+.pagina{
+    background: #FFFFFF;
+}
+
+.caja{
+    width: 100%;
+    position:relative;
+    margin: 0px;
+    background:rgb(15, 128, 134);
+    padding: 3em 0;    
+}
+
+.logo{
+    position: absolute;
+    width: 30%;
+    top: 5px;
+    left: 50px;
+}
+
+nav{
+    position: absolute;
+    top: 30px;
+    left: 870px;
+    
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+     
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #faf9f9;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.contenedor{
+    position: relative;
+    top: 0px;
+    left: 0px;   
+}
+
+#imagen{
+    width: 100%;
+    object-fit: cover;   
+}
+
+.botones{
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    color: #fff;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.botones:hover{
+    cursor: pointer;
+    transform: scale(2, 2);
+}
+
+.atras{
+    left: 3%;
+    top: calc(50% - 100px);
+}
+
+.adelante{
+    right: 3%;
+    top: calc(50% - 100px);
+}
+
+.menu-fixed{
+    position:fixed;
+    z-index:1000;
+    top: 0px;
+}
+
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2.7em;
+    margin: 1em 0 1em;
+    
+}
+
+/*.principal p{
+    position: absolute;
+    text-align: center;
+    font-family: open sans;
+    width: 900px;
+    left: 200px;
+    font-size: 17px;
+    top: 95px;
+    
+}*/
+
+.linea{
+    border-top: 5px solid #0077C0;
+    margin-bottom: 40px;
+}
+.galeria{
+    font-family: "open sans";
+
+}
+
+.contenedor-imagenes{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+
+}
+
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height: 250px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
+}
+
+.imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 118, 192, .781);
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    overflow: hidden;
+}
+
+.overlay h2{
+    color: #fff;
+    font-weight: 300;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+}
+
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background:#1b1a1a;
+    
+}
+
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 0px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.box__footer .rodapie img{
+    width: 210px;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color:#FFFFFF;
+    font-weight: 1000;
+    position: absolute;
+    left: 765px;
+}
+
+.box__footer iframe{
+    
+    position: relative;
+    left: -180px;
+    top: 30px;
+
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+/*Page Contactos*/
+
+.contacto{ 
+    background-image: url(imagenes/imagen-51.jpg);
+    width: 100%;
+    height: 85vh;
+    background-size:cover;
+    background-position: center;
+    -webkit-filter:grayscale(100%);
+    filter: grayscale(100%);     
+}
+
+.contacto h1{
+    position: absolute;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 1000;
+    font-size: large;
+    left: 100px;
+    top:90px;
+    color: #FFFFFF;
+}
+
+.contacto h2{
+    position: absolute;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: medium;
+    left: 100px;
+    top:120px;
+    color: #FFFFFF;
+}
+
+/* Page Retroexcavadora*/
+
+.caracteristica-equipo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 0px;
+    height: 400px;
+}
+#machine{
+    
+    width: 39%; 
+    top: 100px; 
+}
+
+.maquinaria{
+    display: flex;
+    flex-direction: column; 
+    position: relative;   
+}
+
+.maquinaria p{
+    position: relative;
+    left: 600px;
+    top: -350px;
+}
+
+.maquinaria p img{
+    width: 50%;
+    position: absolute;
+    
+}
+
+.btn-1{
+    position: absolute;
+    width: 45%;
+    height: 25%;
+    top: -50px;
+    left: 600px;
+    background: #e66a18;
+    border-color: #e4dcdc;
+    border-radius: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: #f8f6f6;
+    cursor: pointer;
+}
+
+/* Page compresor*/
+
+#compresor{
+    width: 41%; 
+    top: 100px; 
+}
+
+.btn-4{
+    position: absolute;
+    width: 46%;
+    height: 30%;
+    top: -65px;
+    left: 600px;
+    background: #e66a18;
+    border-color: #e4dcdc;
+    border-radius: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: #f8f6f6;
+    cursor: pointer;
+}
+
+/* Page Cargador*/
+
+#cargador{
+    width: 44%; 
+    top: 100px; 
+}
+
+/* Page Camión*/
+
+#dumper{
+    width: 120%; 
+    top: 100px; 
+}
+
+.btn-2{
+    position: relative;
+    width: 43%;
+    height: 14%;
+    top: 100px;
+    left: 27px;
+    background: #e66a18;
+    border-color: #e4dcdc;
+    border-radius: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: #f8f6f6;
+    cursor: pointer;
+}
+
+.camion p{
+    position: relative;
+    left: 20px;
+    top: 0px;
+}
+
+.camion p img{
+    width: 50%;
+    position: absolute;
+    
+}
+
+/* Page Mini*/
+
+#mini{
+    width: 90%; 
+    top: 100px; 
+}
+
+.minibob p{
+    position: relative;
+    left: 600px;
+    top: -360px;
+}
+
+.minibob p img{
+    width: 40%;
+    position: absolute;
+    
+}
+
+.btn-3{
+    position: relative;
+    width: 35%;
+    height: 24%;
+    top: -260px;
+    left: 600px;
+    background: #e66a18;
+    border-color: #e4dcdc;
+    border-radius: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: #f8f6f6;
+    cursor: pointer;
+}
+
+/* Page Carmix*/
+
+#autohormigonera{
+    width: 75%; 
+    top: 100px; 
+}
+
+.carmix p{
+    position: relative;
+    left: 650px;
+    top: -320px;
+}
+
+.carmix p img{
+    width: 40%;
+    position: absolute;
+    
+}
+
+.btn-5{
+    position: relative;
+    width: 37%;
+    height: 22%;
+    top: -230px;
+    left: 650px;
+    background: #e66a18;
+    border-color: #e4dcdc;
+    border-radius: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: #f8f6f6;
+    cursor: pointer;
+}
+
+@media screen and (max-width:912px) {
+    .caja{
+        width: 260%;
+        position:relative;   
+    }
+
+    .logo{ 
+        position: relative;
+        top: 5px;
+        left: 50px;
+        width: 30%;
+    }
+    
+    nav{
+        top: 100px;
+        left: 1200px;   
+    }
+
+    nav a{
+        font-size: 40px;
+    }
+    
+
+    .contenedor{
+        width: 260%; 
+    }
+
+    .titulo-principal{
+        width: 260%;
+    }
+
+    .linea{
+        width: 260%;
+    }
+
+    .contenedor-imagenes{
+        display: inline-block;
+        width: 260%;
+
+    }
+
+    .contenedor-imagenes .imagen{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .imagen img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .overlay h2{
+        font-size: 70px;
+    }
+
+    footer{
+        width: 260%;        
+    }
+
+    .container_footer{
+       
+        display: inline-block; 
+        position: relative;
+        left: 870px;     
+      
+    }
+
+    .box__footer{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+       
+    }
+    
+    .box__footer .rodapie img{
+        width: 250px;
+        
+    }
+    
+    .box__footer .terms{
+        max-width: 400px;
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 22px;  
+    }
+    
+    .box__footer h2{
+        display: none;
+    }
+    
+    .box__footer iframe{ 
+        position: relative;
+        left: -90px;
+        top: 30px;
+            
+    }
+
+    /* Responsive Page Retroexcavadora*/
+
+    #machine{
+        position: relative;
+        width: 65%; 
+        top: -15px;
+        left: 300px; 
+    }
+
+    .maquinaria p{
+        position: relative;
+        left: 1200px;
+        top: -400px;
+    }
+
+    .btn-1{
+        top: -100px;
+        left: 1200px;
+    }
+
+    /* Responsive Page compresor*/
+
+    #compresor{
+        position: relative;
+        width: 65%; 
+        top: -10px;
+        left: 300px;
+    }
+
+    .btn-4{
+        top: -80px;
+        left: 1200px;
+    }
+
+    /* Responsive Page Cargador*/
+
+    #cargador{
+        position: relative;
+        width: 75%; 
+        top: -15px;
+        left: 300px; 
+    }
+
+    /* Responsive Page Camión*/
+
+    #dumper{
+        position: relative;
+        width: 120%; 
+        top: 50px;
+        left: 250px; 
+    }
+
+    .btn-2{
+        top: -130px;
+        left: 1200px;
+
+    }
+
+    .camion p{
+        position: relative;
+        left: 1200px;
+        top: -250px;
+    }
+
+    .camion p img{
+        width: 50%;
+        position: absolute;
+        
+    }
+
+    /* Page Responsive Mini*/
+
+    #mini{
+        position: relative;
+        width: 95%; 
+        top: 0px;
+        left: 300px; 
+    }
+
+    .minibob p{
+        left: 1200px;
+        top: -360px;
+    }
+
+    .btn-3{
+        top: -260px;
+        left: 1200px;
+    }
+
+    /* Page Responsive Carmix*/
+
+    #autohormigonera{
+        position: relative;
+        width: 85%; 
+        top: 0px; 
+        left: 300px;
+    }
+
+    .carmix p{
+        position: relative;
+        left: 1100px;
+        top: -320px;
+    }
+
+    .btn-5{
+        position: relative;
+        width: 37%;
+        height: 22%;
+        top: -220px;
+        left: 1100px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .caja{
+        width: 260%;  
+    }
+
+    .logo{ 
+        top: 10px;
+        left: 50px;
+        width: 35%;
+    }
+    
+    nav{
+        top: 75px;
+        left: 490px;   
+    }
+
+    nav a{
+        font-size: 25px;
+    }
+
+    .contenedor{
+        width: 260%;  
+    }
+
+    .titulo-principal{
+        width: 260%;
+    }
+
+    .linea{
+        width: 260%;
+    }
+
+    .contenedor-imagenes{
+        display: inline-block;
+        width: 260%;
+
+    }
+
+    .contenedor-imagenes .imagen{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .imagen img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .overlay h2{
+        font-size: 70px;
+    }
+
+    footer{
+        width: 260%;
+           
+    }
+
+    .container_footer{
+       
+        display: inline-block; 
+        position: relative;
+        left: 370px;     
+      
+    }
+
+    .box__footer{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        
+       
+    }
+    
+    .box__footer .rodapie img{
+        width: 250px;
+        
+    }
+    
+    .box__footer .terms{
+        max-width: 400px;
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 22px;  
+    }
+    
+    .box__footer h2{
+        display: none;
+    }
+    
+    .box__footer iframe{ 
+        position: relative;
+        left: -90px;
+        top: 30px;
+            
+    }
+
+    /* Responsive Page Retroexcavadora*/
+    
+    #machine{
+        position: relative;
+        width: 120%; 
+        top: -15px;
+        left: 35px; 
+    }
+
+    .maquinaria p{
+        position: relative;
+        left: 550px;
+        top: -330px;
+        font-size: 10px;
+    }
+
+    .btn-1{
+        top: -100px;
+        left: 550px;
+        font-size: 18px;
+    }
+
+    /* Responsive Page compresor*/
+
+    #compresor{
+        position: relative;
+        width: 125%; 
+        top: 5px; 
+        left: 20px;
+    }
+
+    .btn-4{
+        top: -100px;
+        left: 550px;
+        font-size: 20px;
+    }
+
+    /* Responsive Page Cargador*/
+
+    #cargador{
+        width: 125%; 
+        top: -18px; 
+        left: 18px;
+    }
+
+    /* Responsive Page Camión*/
+
+    #dumper{
+        width: 90%; 
+        top: 0px; 
+        left: 30px;
+    }
+
+    .btn-2{
+        top: -70px;
+        left: 500px;
+    }
+
+    .camion p{
+        left: 20px;
+        top: -150px;
+        left: 500px;
+    }
+
+    /* Page Responsive Mini*/
+
+    #mini{
+        width: 130%; 
+        top: 0px;
+        left: 20px; 
+    }
+
+    .minibob p{
+        position: relative;
+        left: 600px;
+        top: -320px;
+    }
+
+    .btn-3{
+        width: 35%;
+        height: 20%;
+        top: -250px;
+        left: 600px;
+        font-size: 18px;
+    }
+
+    /* Responsive Page Carmix*/
+
+    #autohormigonera{
+        width: 130%; 
+        top: 0px;
+        left: 10px; 
+    }
+
+    .carmix p{
+        left: 550px;
+        top: -280px;
+    }
+
+    .btn-5{
+        top: -210px;
+        left: 550px;
+    }
+}
+

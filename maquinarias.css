@@ -1,0 +1,256 @@
+.pagina{
+    background: #f1eaea;
+}
+
+.caja{
+    width: 100%;
+    position:relative;
+    margin: 0px;
+    background:rgb(15, 128, 134);
+    padding: 3em 0;    
+}
+
+.contenedor{
+    position: relative;
+    top: 5px;
+    left: 300px;   
+}
+
+.botones{
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .7);
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    color: #fff;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, .6);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.botones:hover{
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+}
+
+.atras{
+    left: 1%;
+    top: calc(50% - 20px);
+}
+
+.adelante{
+    right: 50%;
+    top: calc(50% - 20px);
+}
+
+.logo{
+    position: absolute;
+    width: 30%;
+    top: 5px;
+    left: 50px;
+}
+
+nav{
+    position: absolute;
+    top: 30px;
+    left: 650px;
+    
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+     
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.menu-fixed{
+    position:fixed;
+    z-index:1000;
+    top: 0px;
+}
+
+.principal{
+    position: relative;
+    padding: 3em;
+    margin: 0px;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    
+}
+
+.principal p{
+    position: absolute;
+    text-align: center;
+    font-family: open sans;
+    width: 900px;
+    left: 200px;
+    font-size: 17px;
+    top: 95px;
+    
+}
+
+.galeria{
+    font-family: "open sans";
+
+}
+
+.linea{
+    border-top: 5px solid #0077C0;
+    margin-bottom: 40px;
+}
+
+.contenedor-imagenes{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+
+}
+
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height: 250px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
+}
+
+.imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 118, 192, .781);
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    overflow: hidden;
+}
+
+.overlay h2{
+    color: #fff;
+    font-weight: 300;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+}
+
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(imagenes/background-footer.svg);
+    background-size: cover;
+}
+
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .rodapie img{
+    width: 200px;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color:#343434;
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+/*Page Contactos*/
+
+.contacto{ 
+    background-image: url(imagenes/imagen-51.jpg);
+    width: 100%;
+    height: 85vh;
+    background-size:cover;
+    background-position: center;
+    -webkit-filter:grayscale(100%);
+    filter: grayscale(100%);     
+}
+
+.partone{
+    background: #e064ad;
+}
+
+.contacto h1{
+    position: absolute;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 1000;
+    font-size: large;
+    left: 100px;
+    top:90px;
+    color: #FFFFFF;
+}
+
+.contacto h2{
+    position: absolute;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: medium;
+    left: 100px;
+    top:120px;
+    color: #FFFFFF;
+}
+
