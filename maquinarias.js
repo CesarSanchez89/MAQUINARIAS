@@ -5,7 +5,7 @@ function carrusel(contenedor){
     contenedor.addEventListener("click", e =>{
         var atras = contenedor.querySelector(".atras");
         var adelante = contenedor.querySelector(".adelante");
-        var img = contenedor.querySelector("img");
+        var img = contenedor.querySelector("#imagen");
         var tgt = e.target;
 
         if (tgt == atras){
