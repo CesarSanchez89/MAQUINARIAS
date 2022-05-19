@@ -1,4 +1,4 @@
-var imagenes = ["imagenes/Banner-4.jpg", "imagenes/Banner-5.jfif", "imagenes/Banner-6.jpg" ]
+var imagenes = ["imagenes/Banner-4.jpg", "imagenes/banner-5.jfif", "imagenes/banner-6.jpg" ]
 var cont = 0;
 
 function carrusel(contenedor){
